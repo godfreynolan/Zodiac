@@ -53,4 +53,11 @@ public class ZodiacDisplayUnitTest {
         assertEquals(Zodiac.signs[ARIES_SIGN_INDEX].getDescription(), descriptionTextView.getText().toString());
     }
 
+    @Test
+    public void zodiacDailyTest() {
+        TextView dailyTextView = (TextView) zodiacDetailActivity.findViewById(R.id.daily);
+        assertEquals("You’ll continue playing dress-up this week, despite being almost 30, " +
+                "and feeling kind of silly every time you put on that professional-looking suit.", dailyTextView.getText().toString());
+    }
+
 }
